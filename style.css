@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Itim', cursive;
+}
+body {
+    background: url(back.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: 100%;
+    background-position: center;
+}
+
+.background {
+    height: 100vh;
+    padding-top: 1px;
+    
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+.display {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 16px; 
+    margin-bottom: 16px;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+    background-color: #fbb0007e;
+}
+
+.tile {
+    border: 1px solid white;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.playerX {
+    color: #b5179e;
+}
+
+.playerO {
+    color: #2ec4b6;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.controls button {
+    position: relative;
+    right: 70px;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.restart {
+    background-color: #498AFB;
+}
+
+#reset {
+    background-color: #FF3860;
+    
+}
+
+
+.scoreboard {
+    width: 100px;
+    position: relative;
+    left: 60px;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: rgb(255, 56, 96);
+}
+/* ---- რესპონსიულობა ---- */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 30px;
+        margin-top: 5%;
+    }
+
+    .display {
+        font-size: 20px;
+    }
+
+    .container {
+        max-width: 250px;
+    }
+
+    .tile {
+        font-size: 40px;
+        min-width: 80px;
+        min-height: 80px;
+    }
+
+    .controls button {
+        font-size: 18px;
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+        background-size: contain;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-top: 10%;
+    }
+
+    .display {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 200px;
+    }
+
+    .tile {
+        font-size: 30px;
+        min-width: 60px;
+        min-height: 60px;
+    }
+
+    .controls button {
+        font-size: 16px;
+        padding: 5px;
+    }
+}
